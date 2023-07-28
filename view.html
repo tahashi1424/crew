@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+    <title>view</title>
+</head>
+<body>
+<header>
+    <div class="logo">Camper</div>
+    <nav>
+        <ul>
+            <li><a href="facility.html">facility</a></li>
+            <li><a href="food.html">food</a></li>
+            <li><a href="view.html">view</a></li>
+            <li><a href="day.schedule.html">schedule</a></li>
+            <li><a href="toppage.html #reserve">reserve</a></li>
+        </ul>
+        <nav>
+</header>
+
+<div id="particles-js"></div>
+<div class="wrapper">
+<div class="title">
+    <h2>VIEW</h2>
+    <div class="container">
+        <div>
+            <img src="img\view-goodview.jpg" class="img">
+        </div>
+        <div>
+            <p>都会では見ることのできない、真っ暗な夜空に広がる無数の星々は、圧倒的な美しさを放ちます。星座を探したり、流れ星を見つけたりする喜びを体験できます。
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="title">
+    <h2>BORNFIRE</h2>
+    <div class="container">
+        <div>
+            <p>テントキャンプは、自分たちでテントを設営したり、焚火をしたりと、アウトドアのスキルを駆使する冒険心をくすぐる要素があります。新しいことに挑戦したり、困難を乗り越えたりする喜びを味わえます。
+            </p>
+        </div>
+        <div>
+            <img src="img\top-view_fire.jpg" class="img">
+        </div>
+    </div>
+</div>
+
+<div class="detail-button">
+  <button class="view vipush"><a href="toppage.html"><span>TOP PAGE</span></a></button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-9/js/5-9.js"></script>
+<script>
+    particlesJS("particles-js", {
+  "particles":{
+    "number":{
+      "value":346,//この数値を変更すると星の数が増減できる
+      "density":{
+        "enable":true,
+        "value_area":800
+      }
+    },
+    "color":{
+      "value":"#ffffff"
+    },
+    "shape":{
+      "type":"circle",//形状はcircleを指定
+      "stroke":{
+        "width":0
+      },
+      },
+    "opacity":{
+      "value":1,//シェイプの透明度
+      "random":true,//シェイプの透明度をランダムにする
+      "anim":{
+        "enable":true,//シェイプの透明度をアニメーションさせる
+        "speed":3,//シェイプの透明度をアニメーションさせる
+        "opacity_min":0,//透明度の最小値０
+        "sync":false//全てを同時にアニメーションさせない
+      }
+    },
+    "size":{
+      "value":2,
+      "random":true,
+      "anim":{
+        "enable":false,
+        "speed":4,
+        "size_min":0.3,
+        "sync":false
+      }
+    },
+    "line_linked":{
+      "enable":false,
+    },
+    "move":{
+      "enable":true,
+      "speed":120,//この数値を小さくするとゆっくりな動きになる
+    "direction":"none",//方向指定なし
+    "random":true,//動きはランダムに
+    "straight":true,//動きをとどめる
+      "out_mode":"out",
+      "bounce":false,
+      "attract":{
+        "enable":false,
+        "rotateX":600,
+        "rotateY":600
+      }
+    }
+  },
+  "interactivity":{
+    "detect_on":"canvas",
+    "events":{
+      "onhover":{
+        "enable":false,
+      },
+      "onclick":{
+        "enable":false,
+      },
+      "resize":true
+    }
+  },
+  "retina_detect":true
+});
+</script>
+</div>
+</body>
+</html>
